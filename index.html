@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SnakeGame</title>
+</head>
+<body>
+    <div class="container">
+       <div class="game-details">
+        <div class="setting-box">
+            <div class="element-box">
+                <label for="default">Set Default</label>
+                <input type="checkbox" id="default">
+            </div>
+            <div class="element-box">
+                <label for="details-color">Set Details Box Color</label>
+                <input type="color" id="details-color">
+            </div>
+            <div class="element-box">
+                <label for="board-color">Set Play Board Color</label>
+                <input type="color" id="board-color">
+            </div>
+            <div class="element-box">
+                <label for="snake-color">Set Snake Color</label>
+                <input type="color" id="snake-color">
+            </div>
+            <div class="element-box">
+                <label for="food-color">Set Food Color</label>
+                <input type="color" id="food-color">
+            </div>
+            <div class="element-box">
+               <select name="" id="speed">
+                <option value="125">Choose Speed</option>
+                <option value="100">Low Speed</option>
+                <option value="125">Medium speed</option>
+                <option value="50">High speed</option>
+               </select>
+            </div>
+            <div class="element-box">
+                <button id="set-btn">Set Changes</button>
+            </div>
+        </div>
+        <i class="fa fa-gear setting-btn" style="cursor:pointer;"></i>
+        <span class="score">Score Is : 0</span>
+        <span class="High-Score">High Score Is :</span>
+       </div> 
+       <div class="game-board"></div> 
+       <div class="controls">
+        <i data-key="ArrowLeft" class="fa fa-solid fa-arrow-left-long"></i>
+        <i data-key="ArrowUp" class="fa fa-solid fa-arrow-up-long"></i>
+        <i data-key="ArrowRight" class="fa fa-solid fa-arrow-right-long"></i>
+        <i data-key="ArrowDown" class="fa fa-solid fa-arrow-down-long"></i>
+       </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
